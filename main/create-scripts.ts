@@ -29,3 +29,8 @@ export function parseMapping (mapping: SrcDstMap) {
     return acc
   }, {})
 }
+
+/** see: https://stackoverflow.com/a/22046081 */
+export function scriptGetKeyboards () {
+  return 'system_profiler -json SPUSBDataType'
+}

@@ -1,4 +1,4 @@
-import { clearKeyMapping, setKeyMapping, getKeyMapping } from "./api"
+import { clearKeyMapping, setKeyMapping, getKeyMapping, getKeyboards } from "./api"
 
 const mapping = {
   // A: 'B',
@@ -12,11 +12,13 @@ const mapping = {
 const keyboardProducetId = '0x2039';
 
 (async () => {
-  await clearKeyMapping(keyboardProducetId)
+  // await clearKeyMapping(keyboardProducetId)
 
-  const out = await setKeyMapping(keyboardProducetId, mapping)
-  console.log(out)
+  // const out = await setKeyMapping(keyboardProducetId, mapping)
+  // console.log(out)
 
-  const kp = await getKeyMapping(keyboardProducetId)
-  console.log(kp)
+  // const kp = await getKeyMapping(keyboardProducetId)
+  // console.log(kp)
+  const keyboards = await getKeyboards()
+  console.log(keyboards)
 })()

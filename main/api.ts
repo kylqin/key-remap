@@ -1,5 +1,5 @@
 import * as execa from 'execa'
-import { parseMapping, scriptClearMapping, scriptGetMapping, scriptSetMapping, SrcDstMap } from './create-scripts'
+import { parseMapping, scriptClearMapping, scriptGetMapping, scriptSetMapping, SrcDstMap, scriptGetKeyboards } from './create-scripts'
 
 /**
  * Parse output:
@@ -66,4 +66,38 @@ export async function setKeyMapping (keyboardId: string, mapping: SrcDstMap) {
   const { stdout } = await execa.command(script)
   return parseKeyMapStdout(stdout)
   // return stdout
+}
+
+function parseKeyboardsFromJson (json: string): { name: string, productId: string }[] {
+  const obj = JSON.parse(json)
+  const keyboards = []
+
+  const collect = (obj) => {
+    if (Array.isArray(obj)) {
+      for (const item of obj) {
+        collect(item)
+      }
+    } else if (obj) {
+      if (/keyboard/i.test(obj._name)) {
+        keyboards.push({
+          name: obj._name,
+          productId: obj.product_id
+        })
+      }
+      if (obj._items) {
+        collect(obj._items)
+      }
+    }
+  }
+
+  collect(obj.SPUSBDataType)
+
+  return keyboards
+}
+
+export async function getKeyboards () {
+  const script = scriptGetKeyboards()
+  const { stdout } = await execa.command(script)
+  const result = parseKeyboardsFromJson(stdout)
+  return result
 }
