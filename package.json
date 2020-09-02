@@ -95,5 +95,8 @@
   },
   "engines": {
     "node": ">=10.13.0"
+  },
+  "dependencies": {
+    "execa": "4.0.3"
   }
 }
