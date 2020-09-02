@@ -1,3 +1,34 @@
-:host {
-  
+.header-menu {
+  line-height: 64px;
+}
+
+.outer-content {
+  padding: 0;
+}
+
+nz-breadcrumb {
+  margin: 10px 24px;
+}
+
+.inner-layout {
+  padding: 0;
+  background: #fff;
+  height: calc(100% - 134px);
+}
+
+.sider-menu {
+  height: 100%;
+}
+
+.inner-content {
+  padding: 0 24px;
+  min-height: 280px;
+}
+
+nz-footer {
+  text-align: center;
+}
+
+.out-layout {
+  height: 100%;
 }
