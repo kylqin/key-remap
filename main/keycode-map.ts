@@ -614,7 +614,9 @@ const mp = mapping.map((m) => {
   };
 });
 
-const mpKeyboard = mp.filter(m => m.type === 'keyboard').reduce((acc, m) => {
+const mpKeyboardList = mp.filter(m => m.type === 'keyboard')
+
+const mpKeyboardMap = mpKeyboardList.reduce((acc, m) => {
   for (const key of m.keys) {
     acc.set(key, m)
   }
@@ -622,11 +624,15 @@ const mpKeyboard = mp.filter(m => m.type === 'keyboard').reduce((acc, m) => {
 }, new Map())
 
 export function toDetail (key: string) {
-  return mpKeyboard.get(key)
+  return mpKeyboardMap.get(key)
 }
 
 export function toCode (key: string) {
-  return mpKeyboard.get(key).value
+  return mpKeyboardMap.get(key).value
+}
+
+export function getKeys (internal: boolean = false) {
+  return mpKeyboardList
 }
 
 // console.log(mpKeyboard);

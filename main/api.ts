@@ -1,5 +1,6 @@
 import * as execa from 'execa'
 import { parseMapping, scriptClearMapping, scriptGetMapping, scriptSetMapping, SrcDstMap, scriptGetKeyboards } from './create-scripts'
+import { getKeys as _getKeys } from './keycode-map'
 
 /**
  * Parse output:
@@ -34,7 +35,7 @@ function parseKeyMapStdout (stdout: string): { src: string, dst: string}[] {
   // const lines = stdout.split('\n')
   const matches = stdout.match(/[^(]\(([^)]+)\)/m)
 
-  const json = matches[0]
+  let json = matches[0]
     .replace('(', '[')
     .replace(')', ']')
     .replace(/HIDKeyboardModifierMappingDst/g, '"src"')
@@ -43,6 +44,10 @@ function parseKeyMapStdout (stdout: string): { src: string, dst: string}[] {
     .replace(/\s/mg, '')
     .replace(/;}/g, '}')
     .replace(/;/g, ',')
+
+  if (json === '[null]') {
+    json = '[]'
+  }
 
   // console.log(json)
   const result = JSON.parse(json).map(p => ({ src: '0x' + p.src.toString(16), 'dst': '0x' + p.dst.toString(16) }))
@@ -66,6 +71,10 @@ export async function setKeyMapping (keyboardId: string, mapping: SrcDstMap) {
   const { stdout } = await execa.command(script)
   return parseKeyMapStdout(stdout)
   // return stdout
+}
+
+export async function getKeys () {
+  return Promise.resolve(_getKeys())
 }
 
 function parseKeyboardsFromJson (json: string): { name: string, productId: string }[] {

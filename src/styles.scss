@@ -1,2 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~ng-zorro-antd/ng-zorro-antd.min.css";
+
+.page-header {
+  >div{
+    background-color: white;
+  }
+
+  .device-select {
+    width: 400px;
+    margin: 10px auto;
+  }
+}
+
+.page-mapping {
+  .key-select {
+    width: 200px;
+  }
+}
+
+.ant-layout {
+  background-color: transparent;
+}

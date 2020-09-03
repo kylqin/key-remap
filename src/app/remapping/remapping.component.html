@@ -1,1 +1,37 @@
-<p>remapping works!</p>
+<nz-layout>
+  <nz-content class="page-header">
+    <div nz-row>
+      <nz-select class="device-select" nzShowSearch nzAllowClear nzPlaceHolder="Select Target Keyboard" [(ngModel)]="targetKeyboard">
+        <nz-option *ngFor="let o of keyboards" [nzLabel]="o.name" [nzValue]="o.productId"></nz-option>
+      </nz-select>
+    </div>
+  </nz-content>
+  <nz-content class="page-mapping">
+    <nz-table #basicTable [nzData]="mapping" nzShowPagination="false">
+      <thead>
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of basicTable.data">
+          <td>
+            <nz-select class="key-select" nzShowSearch nzAllowClear nzPlaceHolder="Select Key" [(ngModel)]="data.src">
+              <nz-option *ngFor="let o of keys" [nzLabel]="o.title" [nzValue]="o.value"></nz-option>
+            </nz-select>
+          </td>
+          <td>
+            <nz-select class="key-select" nzShowSearch nzAllowClear nzPlaceHolder="Select Key" [(ngModel)]="data.dst">
+              <nz-option *ngFor="let o of keys" [nzLabel]="o.title" [nzValue]="o.value"></nz-option>
+            </nz-select>
+          </td>
+          <td>
+            <a>Delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-content>
+</nz-layout>
