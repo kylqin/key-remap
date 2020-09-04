@@ -2,6 +2,8 @@ import { IconDefinition } from '@ant-design/icons-angular';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 
 import {
+  HomeOutline,
+  PlusOutline,
   UserOutline,
   LaptopOutline,
   NotificationOutline,
@@ -9,6 +11,8 @@ import {
 import { NgModule } from '@angular/core';
 
 const icons: IconDefinition[] = [
+  HomeOutline,
+  PlusOutline,
   UserOutline,
   LaptopOutline,
   NotificationOutline,

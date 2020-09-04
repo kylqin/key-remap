@@ -3,12 +3,12 @@ import { toCode } from "./keycode-map"
 /** see: https://www.nanoant.com/mac/macos-function-key-remapping-with-hidutil */
 /** see: https://stackoverflow.com/a/58981641 */
 
-export type SrcDstMap = { [src: string]: string }
+export type KeyMapping = { src: string, dst: string }[]
 
-export const scriptSetMapping = (productId: string, mapping: SrcDstMap): string => {
-  const mappingStr = Object.keys(mapping).reduce((acc, src) =>
+export const scriptSetMapping = (productId: string, mapping: KeyMapping): string => {
+  const mappingStr = mapping.reduce((acc, { src, dst }) =>
   {
-    return `${acc},{"HIDKeyboardModifierMappingSrc":${src},"HIDKeyboardModifierMappingDst":${mapping[src]}}`
+    return `${acc},{"HIDKeyboardModifierMappingSrc":${src},"HIDKeyboardModifierMappingDst":${dst}}`
   }, '').slice(1).split('\n').join('')
 
   return `hidutil property --matching {"ProductID":${productId}} --set {"UserKeyMapping":[${mappingStr}]}`
@@ -22,11 +22,9 @@ export function scriptClearMapping (productId: string) {
   return `hidutil property --matching '{"ProductID":${productId}}' --set {"UserKeyMapping":[]}`
 }
 
-export function parseMapping (mapping: SrcDstMap) {
-  return Object.keys(mapping).reduce((acc: SrcDstMap, src: string) => {
-    // acc[K[src]] = K[mapping[src]]
-    acc[toCode(src)] = toCode(mapping[src])
-    return acc
+export function parseMapping (mapping: KeyMapping) {
+  return mapping.map(({ src, dst }) => {
+    return { src: toCode(src), dst: toCode(dst) }
   }, {})
 }
 

@@ -17,7 +17,7 @@ export const mapping = [
 
   {
     title: "Keypad 6 and Right Arrow",
-    value: "0x5E",
+    value: "0x5e",
   },
 
   {
@@ -37,7 +37,7 @@ export const mapping = [
 
   {
     title: "Keypad 7 and Home",
-    value: "0x5F",
+    value: "0x5f",
   },
 
   {
@@ -122,7 +122,7 @@ export const mapping = [
 
   {
     title: "Keyboard g and G",
-    value: "0x0A",
+    value: "0x0a",
   },
 
   {
@@ -142,7 +142,7 @@ export const mapping = [
 
   {
     title: "Keyboard h and H",
-    value: "0x0B",
+    value: "0x0b",
   },
 
   {
@@ -162,12 +162,12 @@ export const mapping = [
 
   {
     title: "Keyboard i and I",
-    value: "0x0C",
+    value: "0x0c",
   },
 
   {
     title: "Keyboard Delete (Backspace)",
-    value: "0x2A",
+    value: "0x2a",
   },
 
   {
@@ -182,12 +182,12 @@ export const mapping = [
 
   {
     title: "Keyboard j and J",
-    value: "0x0D",
+    value: "0x0d",
   },
 
   {
     title: "Keyboard Tab",
-    value: "0x2B",
+    value: "0x2b",
   },
 
   {
@@ -202,17 +202,17 @@ export const mapping = [
 
   {
     title: "Keyboard k and K",
-    value: "0x0E",
+    value: "0x0e",
   },
 
   {
     title: "Keyboard Spacebar",
-    value: "0x2C",
+    value: "0x2c",
   },
 
   {
     title: "Keyboard Home",
-    value: "0x4A",
+    value: "0x4a",
   },
 
   {
@@ -222,17 +222,17 @@ export const mapping = [
 
   {
     title: "Keyboard l and L",
-    value: "0x0F",
+    value: "0x0f",
   },
 
   {
     title: "Keyboard - and _",
-    value: "0x2D",
+    value: "0x2d",
   },
 
   {
     title: "Keyboard Page Up",
-    value: "0x4B",
+    value: "0x4b",
   },
 
   {
@@ -247,17 +247,17 @@ export const mapping = [
 
   {
     title: "Keyboard = and +",
-    value: "0x2E",
+    value: "0x2e",
   },
 
   {
     title: "Keyboard Delete Forward",
-    value: "0x4C",
+    value: "0x4c",
   },
 
   {
     title: "Keyboard F15",
-    value: "0x6A",
+    value: "0x6a",
   },
 
   {
@@ -267,17 +267,17 @@ export const mapping = [
 
   {
     title: "Keyboard [ and {",
-    value: "0x2F",
+    value: "0x2f",
   },
 
   {
     title: "Keyboard End",
-    value: "0x4D",
+    value: "0x4d",
   },
 
   {
     title: "Keyboard F16",
-    value: "0x6B",
+    value: "0x6b",
   },
 
   {
@@ -292,12 +292,12 @@ export const mapping = [
 
   {
     title: "Keyboard Page Down",
-    value: "0x4E",
+    value: "0x4e",
   },
 
   {
     title: "Keyboard F17",
-    value: "0x6C",
+    value: "0x6c",
   },
 
   {
@@ -312,12 +312,12 @@ export const mapping = [
 
   {
     title: "Keyboard Right Arrow",
-    value: "0x4F",
+    value: "0x4f",
   },
 
   {
     title: "Keyboard F18",
-    value: "0x6D",
+    value: "0x6d",
   },
 
   {
@@ -337,7 +337,7 @@ export const mapping = [
 
   {
     title: "Keyboard F19",
-    value: "0x6E",
+    value: "0x6e",
   },
 
   {
@@ -357,7 +357,7 @@ export const mapping = [
 
   {
     title: "Keyboard F20",
-    value: "0x6F",
+    value: "0x6f",
   },
 
   {
@@ -442,7 +442,7 @@ export const mapping = [
 
   {
     title: "Keyboard w and W",
-    value: "0x1A",
+    value: "0x1a",
   },
 
   {
@@ -457,12 +457,12 @@ export const mapping = [
 
   {
     title: "Keyboard Left Control",
-    value: "0xE0",
+    value: "0xe0",
   },
 
   {
     title: "Keyboard x and X",
-    value: "0x1B",
+    value: "0x1b",
   },
 
   {
@@ -477,17 +477,17 @@ export const mapping = [
 
   {
     title: "Keyboard Left Shift",
-    value: "0xE1",
+    value: "0xe1",
   },
 
   {
     title: "Keyboard y and Y",
-    value: "0x1C",
+    value: "0x1c",
   },
 
   {
     title: "Keyboard F1",
-    value: "0x3A",
+    value: "0x3a",
   },
 
   {
@@ -497,17 +497,17 @@ export const mapping = [
 
   {
     title: "Keyboard Left Alt",
-    value: "0xE2",
+    value: "0xe2",
   },
 
   {
     title: "Keyboard z and Z",
-    value: "0x1D",
+    value: "0x1d",
   },
 
   {
     title: "Keyboard F2",
-    value: "0x3B",
+    value: "0x3b",
   },
 
   {
@@ -517,47 +517,47 @@ export const mapping = [
 
   {
     title: "Keyboard Left GUI",
-    value: "0xE3",
+    value: "0xe3",
   },
 
   {
     title: "Keyboard 1 and !",
-    value: "0x1E",
+    value: "0x1e",
   },
 
   {
     title: "Keyboard F3",
-    value: "0x3C",
+    value: "0x3c",
   },
 
   {
     title: "Keypad 2 and Down Arrow",
-    value: "0x5A",
+    value: "0x5a",
   },
 
   {
     title: "Keyboard Right Control",
-    value: "0xE4",
+    value: "0xe4",
   },
 
   {
     title: "Keyboard 2 and @",
-    value: "0x1F",
+    value: "0x1f",
   },
 
   {
     title: "Keyboard F4",
-    value: "0x3D",
+    value: "0x3d",
   },
 
   {
     title: "Keypad 3 and Page Down",
-    value: "0x5B",
+    value: "0x5b",
   },
 
   {
     title: "Keyboard Right Shift",
-    value: "0xE5",
+    value: "0xe5",
   },
 
   {
@@ -567,17 +567,17 @@ export const mapping = [
 
   {
     title: "Keyboard F5",
-    value: "0x3E",
+    value: "0x3e",
   },
 
   {
     title: "Keypad 4 and Left Arrow",
-    value: "0x5C",
+    value: "0x5c",
   },
 
   {
     title: "Keyboard Right Alt",
-    value: "0xE6",
+    value: "0xe6",
   },
 
   {
@@ -587,17 +587,17 @@ export const mapping = [
 
   {
     title: "Keyboard F6",
-    value: "0x3F",
+    value: "0x3f",
   },
 
   {
     title: "Keypad 5",
-    value: "0x5D",
+    value: "0x5d",
   },
 
   {
     title: "Keyboard Right GUI",
-    value: "0xE7",
+    value: "0xe7",
   },
 ];
 

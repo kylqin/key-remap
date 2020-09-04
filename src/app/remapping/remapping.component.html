@@ -16,7 +16,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let data of basicTable.data">
+        <tr *ngFor="let data of basicTable.data; index as idx">
           <td>
             <nz-select class="key-select" nzShowSearch nzAllowClear nzPlaceHolder="Select Key" [(ngModel)]="data.src">
               <nz-option *ngFor="let o of keys" [nzLabel]="o.title" [nzValue]="o.value"></nz-option>
@@ -28,10 +28,16 @@
             </nz-select>
           </td>
           <td>
-            <a>Delete</a>
+            <a (click)="deleteMappinh(idx)">Delete</a>
           </td>
         </tr>
       </tbody>
     </nz-table>
+    <button nz-button nzType="dashed" nzBlock (click)="addMapping()">
+      <i nz-icon nzType="plus" nzTheme="outline"></i>
+    </button>
+    <button nz-button nzType="primary" nzBlock (click)="saveMapping()">
+      Apply
+    </button>
   </nz-content>
 </nz-layout>

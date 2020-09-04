@@ -1,5 +1,5 @@
 import * as execa from 'execa'
-import { parseMapping, scriptClearMapping, scriptGetMapping, scriptSetMapping, SrcDstMap, scriptGetKeyboards } from './create-scripts'
+import { parseMapping, scriptClearMapping, scriptGetMapping, scriptSetMapping, scriptGetKeyboards, KeyMapping } from './create-scripts'
 import { getKeys as _getKeys } from './keycode-map'
 
 /**
@@ -66,8 +66,8 @@ export async function getKeyMapping (keyboardId: string) {
   // return stdout
 }
 
-export async function setKeyMapping (keyboardId: string, mapping: SrcDstMap) {
-  const script = scriptSetMapping(keyboardId, parseMapping(mapping))
+export async function setKeyMapping (keyboardId: string, mapping: KeyMapping, needParse = false) {
+  const script = scriptSetMapping(keyboardId, needParse ? parseMapping(mapping) : mapping)
   const { stdout } = await execa.command(script)
   return parseKeyMapStdout(stdout)
   // return stdout
