@@ -7,7 +7,7 @@
     </div>
   </nz-content>
   <nz-content class="page-mapping">
-    <nz-table #basicTable [nzData]="mappings" nzShowPagination="false">
+    <nz-table #mappingsTable [nzData]="mappings" nzShowPagination="false">
       <thead>
         <tr>
           <th>From</th>
@@ -16,7 +16,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let data of basicTable.data; index as idx">
+        <tr *ngFor="let data of mappingsTable.data; index as idx">
           <td>
             <nz-select class="key-select" nzShowSearch nzAllowClear nzPlaceHolder="Select Key" [(ngModel)]="data.src">
               <nz-option *ngFor="let o of keys" [nzLabel]="o.title" [nzValue]="o.value"></nz-option>

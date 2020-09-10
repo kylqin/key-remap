@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RemappingComponent } from './remapping.component';
+import { ProfilesComponent } from './profiles.component';
 import { SharedModule } from '../shared/shared.module';
 
 
 
 @NgModule({
-  declarations: [RemappingComponent],
+  declarations: [ProfilesComponent],
   imports: [
     CommonModule,
     SharedModule
   ]
 })
-export class RemappingModule { }
+export class ProfilesModule { }

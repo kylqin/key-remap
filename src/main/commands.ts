@@ -1,4 +1,4 @@
-import { CommandAction } from '../shared/types'
+import { CommandAction } from '@common/types'
 
 type Command = (action: CommandAction) => Promise<any>
 

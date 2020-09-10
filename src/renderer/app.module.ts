@@ -20,6 +20,7 @@ import { DetailModule } from './detail/detail.module';
 import { RemappingModule  } from './remapping/remapping.module';
 
 import { AppComponent } from './app.component';
+import { ProfilesModule } from './profiles/profiles.module';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -38,6 +39,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     HomeModule,
     DetailModule,
     RemappingModule,
+    ProfilesModule,
     AppRoutingModule,
     TranslateModule.forRoot({
       loader: {

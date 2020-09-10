@@ -6,6 +6,21 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": [
+        "src/renderer/*"
+      ],
+      "@main/*": [
+        "src/main/*"
+      ],
+      "main/*": [
+        "src/main/*"
+      ],
+      "@common/*": [
+        "src/common/*"
+      ]
+    },
     "types": [
       "node"
     ],

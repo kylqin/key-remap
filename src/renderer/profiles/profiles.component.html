@@ -1,0 +1,31 @@
+<nz-layout>
+  <nz-content class="page-mapping">
+    <nz-table #profilesTable [nzData]="profiles" nzShowPagination="false">
+      <thead>
+        <tr>
+          <th>Prfiles</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of profilesTable.data; index as idx">
+          <td>
+            <!-- <nz-select class="key-select" nzShowSearch nzAllowClear nzPlaceHolder="Select Key" [(ngModel)]="data.src">
+              <nz-option *ngFor="let o of keys" [nzLabel]="o.title" [nzValue]="o.value"></nz-option>
+            </nz-select> -->
+            {{data.name}}
+          </td>
+          <td>
+            <a (click)="deleteProfile(idx)">Delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+    <button nz-button nzType="dashed" nzBlock (click)="addProfile()">
+      <i nz-icon nzType="plus" nzTheme="outline"></i>
+    </button>
+    <button nz-button nzType="primary" nzBlock (click)="saveProfiles()">
+      Apply
+    </button>
+  </nz-content>
+</nz-layout>

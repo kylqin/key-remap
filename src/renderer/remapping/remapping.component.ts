@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { IpcService } from '../core/services/ipc/ipc.service';
 import { RemappingService } from './remapping.service';
 import { Subscription } from 'rxjs';
 
@@ -49,9 +48,12 @@ export class RemappingComponent implements OnInit {
       next: (keys: any[]) => { this.keys = keys }
     })
     this.remappingService.pullKeys()
-   }
+  }
 
-  ngOnDestroy(): void {
+  ngOnInit() {
+  }
+
+  ngOnDestroy() {
     this.mappingsSubscription.unsubscribe()
     this.keyboardsSubscription.unsubscribe()
     this.keysSubscription.unsubscribe()

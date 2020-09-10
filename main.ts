@@ -2,7 +2,7 @@ import { app, BrowserWindow, screen } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
 
-import './main/apply'
+import './src/main/apply'
 
 let win: BrowserWindow = null;
 const args = process.argv.slice(1),

@@ -1,6 +1,7 @@
 import * as execa from 'execa'
 import { parseMapping, scriptClearMapping, scriptGetMapping, scriptSetMapping, scriptGetKeyboards, KeyMapping } from './create-scripts'
 import { getKeys as _getKeys } from './keycode-map'
+import { Mapping } from '@common/types'
 
 /**
  * Parse output:
@@ -31,7 +32,7 @@ import { getKeys as _getKeys } from './keycode-map'
  *  ...
  * ]
  */
-function parseKeyMapStdout (stdout: string): { src: string, dst: string}[] {
+function parseKeyMapStdout (stdout: string): Mapping[] {
   // const lines = stdout.split('\n')
   const matches = stdout.match(/[^(]\(([^)]+)\)/m)
 

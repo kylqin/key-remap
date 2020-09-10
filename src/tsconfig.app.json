@@ -3,11 +3,10 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "module": "es2015",
-    "baseUrl": "",
     "types": []
   },
   "include": [
-    "main.ts",
+    "main-renderer.ts",
     "polyfill.ts"
   ],
   "exclude": [

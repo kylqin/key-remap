@@ -1,7 +1,7 @@
 import './ipc'
 import { registerCommand } from "./commands";
-import { CommandAction } from "../shared/types";
-import { getKeyboards, getKeyMapping, setKeyMapping, clearKeyMapping, getKeys } from './api';
+import { CommandAction } from "@common/types";
+import { getKeyboards, getKeyMapping, setKeyMapping, clearKeyMapping, getKeys } from './remapping/api';
 
 
 registerCommand('list-keys', async (action: CommandAction) => {

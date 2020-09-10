@@ -1,6 +1,6 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import { ipcRenderer } from 'electron';
-import { CommandAction } from "../../../../../shared/types";
+import { CommandAction } from '../../../../common/types';
 
 export type CommandReplyListener = (result: any) => void
 
