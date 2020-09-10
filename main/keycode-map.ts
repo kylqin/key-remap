@@ -1,604 +1,486 @@
 /** see: https://developer.apple.com/library/archive/technotes/tn2450/_index.html#//apple_ref/doc/uid/DTS40017618-CH1-KEY_TABLE_USAGES */
+
 export const mapping = [
   {
-    title: "Keyboard a and A",
-    value: "0x04",
+    "title": "Keyboard a and A",
+    "value": "0x04"
   },
-
   {
-    title: "Keyboard 5 and %",
-    value: "0x22",
+    "title": "Keyboard b and B",
+    "value": "0x05"
   },
-
   {
-    title: "Keyboard F7",
-    value: "0x40",
+    "title": "Keyboard c and C",
+    "value": "0x06"
   },
-
   {
-    title: "Keypad 6 and Right Arrow",
-    value: "0x5e",
+    "title": "Keyboard d and D",
+    "value": "0x07"
   },
-
   {
-    title: "Keyboard b and B",
-    value: "0x05",
+    "title": "Keyboard e and E",
+    "value": "0x08"
   },
-
   {
-    title: "Keyboard 6 and ^",
-    value: "0x23",
+    "title": "Keyboard f and F",
+    "value": "0x09"
   },
-
   {
-    title: "Keyboard F8",
-    value: "0x41",
+    "title": "Keyboard g and G",
+    "value": "0x0a"
   },
-
   {
-    title: "Keypad 7 and Home",
-    value: "0x5f",
+    "title": "Keyboard h and H",
+    "value": "0x0b"
   },
-
   {
-    title: "Keyboard c and C",
-    value: "0x06",
+    "title": "Keyboard i and I",
+    "value": "0x0c"
   },
-
   {
-    title: "Keyboard 7 and &",
-    value: "0x24",
+    "title": "Keyboard j and J",
+    "value": "0x0d"
   },
-
   {
-    title: "Keyboard F9",
-    value: "0x42",
+    "title": "Keyboard k and K",
+    "value": "0x0e"
   },
-
   {
-    title: "Keypad 8 and Up Arrow",
-    value: "0x60",
+    "title": "Keyboard l and L",
+    "value": "0x0f"
   },
-
   {
-    title: "Keyboard d and D",
-    value: "0x07",
+    "title": "Keyboard m and M",
+    "value": "0x10"
   },
-
   {
-    title: "Keyboard 8 and *",
-    value: "0x25",
+    "title": "Keyboard n and N",
+    "value": "0x11"
   },
-
   {
-    title: "Keyboard F10",
-    value: "0x43",
+    "title": "Keyboard o and O",
+    "value": "0x12"
   },
-
   {
-    title: "Keypad 9 and Page Up",
-    value: "0x61",
+    "title": "Keyboard p and P",
+    "value": "0x13"
   },
-
   {
-    title: "Keyboard e and E",
-    value: "0x08",
+    "title": "Keyboard q and Q",
+    "value": "0x14"
   },
-
   {
-    title: "Keyboard 9 and (",
-    value: "0x26",
+    "title": "Keyboard r and R",
+    "value": "0x15"
   },
-
   {
-    title: "Keyboard F11",
-    value: "0x44",
+    "title": "Keyboard s and S",
+    "value": "0x16"
   },
-
   {
-    title: "Keypad 0 and Insert",
-    value: "0x62",
+    "title": "Keyboard t and T",
+    "value": "0x17"
   },
-
   {
-    title: "Keyboard f and F",
-    value: "0x09",
+    "title": "Keyboard u and U",
+    "value": "0x18"
   },
-
   {
-    title: "Keyboard 0 and )",
-    value: "0x27",
+    "title": "Keyboard v and V",
+    "value": "0x19"
   },
-
   {
-    title: "Keyboard F12",
-    value: "0x45",
+    "title": "Keyboard w and W",
+    "value": "0x1a"
   },
-
   {
-    title: "Keypad . and Delete",
-    value: "0x63",
+    "title": "Keyboard x and X",
+    "value": "0x1b"
   },
-
   {
-    title: "Keyboard g and G",
-    value: "0x0a",
+    "title": "Keyboard y and Y",
+    "value": "0x1c"
   },
-
   {
-    title: "Keyboard Return (Enter)",
-    value: "0x28",
+    "title": "Keyboard z and Z",
+    "value": "0x1d"
   },
-
   {
-    title: "Keyboard Print Screen",
-    value: "0x46",
+    "title": "Keyboard 1 and !",
+    "value": "0x1e"
   },
-
   {
-    title: "Keyboard Non-US  and |",
-    value: "0x64",
+    "title": "Keyboard 2 and @",
+    "value": "0x1f"
   },
-
   {
-    title: "Keyboard h and H",
-    value: "0x0b",
+    "title": "Keyboard 3 and #",
+    "value": "0x20"
   },
-
   {
-    title: "Keyboard Escape",
-    value: "0x29",
+    "title": "Keyboard 4 and $",
+    "value": "0x21"
   },
-
   {
-    title: "Keyboard Scroll Lock",
-    value: "0x47",
+    "title": "Keyboard 5 and %",
+    "value": "0x22"
   },
-
   {
-    title: "Keyboard Application",
-    value: "0x65",
+    "title": "Keyboard 6 and ^",
+    "value": "0x23"
   },
-
   {
-    title: "Keyboard i and I",
-    value: "0x0c",
+    "title": "Keyboard 7 and &",
+    "value": "0x24"
   },
-
   {
-    title: "Keyboard Delete (Backspace)",
-    value: "0x2a",
+    "title": "Keyboard 8 and *",
+    "value": "0x25"
   },
-
   {
-    title: "Keyboard Pause",
-    value: "0x48",
+    "title": "Keyboard 9 and (",
+    "value": "0x26"
   },
-
   {
-    title: "Keyboard Power",
-    value: "0x66",
+    "title": "Keyboard 0 and )",
+    "value": "0x27"
   },
-
   {
-    title: "Keyboard j and J",
-    value: "0x0d",
+    "title": "Keyboard Return (Enter)",
+    "value": "0x28"
   },
-
   {
-    title: "Keyboard Tab",
-    value: "0x2b",
+    "title": "Keyboard Escape",
+    "value": "0x29"
   },
-
   {
-    title: "Keyboard Insert",
-    value: "0x49",
+    "title": "Keyboard Delete (Backspace)",
+    "value": "0x2a"
   },
-
   {
-    title: "Keypad =",
-    value: "0x67",
+    "title": "Keyboard Tab",
+    "value": "0x2b"
   },
-
   {
-    title: "Keyboard k and K",
-    value: "0x0e",
+    "title": "Keyboard Spacebar",
+    "value": "0x2c"
   },
-
   {
-    title: "Keyboard Spacebar",
-    value: "0x2c",
+    "title": "Keyboard - and _",
+    "value": "0x2d"
   },
-
   {
-    title: "Keyboard Home",
-    value: "0x4a",
+    "title": "Keyboard = and +",
+    "value": "0x2e"
   },
-
   {
-    title: "Keyboard F13",
-    value: "0x68",
+    "title": "Keyboard [ and {",
+    "value": "0x2f"
   },
-
   {
-    title: "Keyboard l and L",
-    value: "0x0f",
+    "title": "Keyboard ] and }",
+    "value": "0x30"
   },
-
   {
-    title: "Keyboard - and _",
-    value: "0x2d",
+    "title": "Keyboard  and |",
+    "value": "0x31"
   },
-
   {
-    title: "Keyboard Page Up",
-    value: "0x4b",
+    "title": "Keyboard Non-US # and ~",
+    "value": "0x32"
   },
-
   {
-    title: "Keyboard F14",
-    value: "0x69",
+    "title": "Keyboard ; and :",
+    "value": "0x33"
   },
-
   {
-    title: "Keyboard m and M",
-    value: "0x10",
+    "title": "Keyboard ' and \"",
+    "value": "0x34"
   },
-
   {
-    title: "Keyboard = and +",
-    value: "0x2e",
+    "title": "Keyboard Grave Accent and Tilde",
+    "value": "0x35"
   },
-
   {
-    title: "Keyboard Delete Forward",
-    value: "0x4c",
+    "title": "Keyboard , and \"<\"",
+    "value": "0x36"
   },
-
   {
-    title: "Keyboard F15",
-    value: "0x6a",
+    "title": "Keyboard . and \">\"",
+    "value": "0x37"
   },
-
   {
-    title: "Keyboard n and N",
-    value: "0x11",
+    "title": "Keyboard / and ?",
+    "value": "0x38"
   },
-
   {
-    title: "Keyboard [ and {",
-    value: "0x2f",
+    "title": "Keyboard Caps Lock",
+    "value": "0x39"
   },
-
   {
-    title: "Keyboard End",
-    value: "0x4d",
+    "title": "Keyboard F1",
+    "value": "0x3a"
   },
-
   {
-    title: "Keyboard F16",
-    value: "0x6b",
+    "title": "Keyboard F2",
+    "value": "0x3b"
   },
-
   {
-    title: "Keyboard o and O",
-    value: "0x12",
+    "title": "Keyboard F3",
+    "value": "0x3c"
   },
-
   {
-    title: "Keyboard ] and }",
-    value: "0x30",
+    "title": "Keyboard F4",
+    "value": "0x3d"
   },
-
   {
-    title: "Keyboard Page Down",
-    value: "0x4e",
+    "title": "Keyboard F5",
+    "value": "0x3e"
   },
-
   {
-    title: "Keyboard F17",
-    value: "0x6c",
+    "title": "Keyboard F6",
+    "value": "0x3f"
   },
-
   {
-    title: "Keyboard p and P",
-    value: "0x13",
+    "title": "Keyboard F7",
+    "value": "0x40"
   },
-
   {
-    title: "Keyboard  and |",
-    value: "0x31",
+    "title": "Keyboard F8",
+    "value": "0x41"
   },
-
   {
-    title: "Keyboard Right Arrow",
-    value: "0x4f",
+    "title": "Keyboard F9",
+    "value": "0x42"
   },
-
   {
-    title: "Keyboard F18",
-    value: "0x6d",
+    "title": "Keyboard F10",
+    "value": "0x43"
   },
-
   {
-    title: "Keyboard q and Q",
-    value: "0x14",
+    "title": "Keyboard F11",
+    "value": "0x44"
   },
-
   {
-    title: "Keyboard Non-US # and ~",
-    value: "0x32",
+    "title": "Keyboard F12",
+    "value": "0x45"
   },
-
   {
-    title: "Keyboard Left Arrow",
-    value: "0x50",
+    "title": "Keyboard Print Screen",
+    "value": "0x46"
   },
-
   {
-    title: "Keyboard F19",
-    value: "0x6e",
+    "title": "Keyboard Scroll Lock",
+    "value": "0x47"
   },
-
   {
-    title: "Keyboard r and R",
-    value: "0x15",
+    "title": "Keyboard Pause",
+    "value": "0x48"
   },
-
   {
-    title: "Keyboard ; and :",
-    value: "0x33",
+    "title": "Keyboard Insert",
+    "value": "0x49"
   },
-
   {
-    title: "Keyboard Down Arrow",
-    value: "0x51",
+    "title": "Keyboard Home",
+    "value": "0x4a"
   },
-
   {
-    title: "Keyboard F20",
-    value: "0x6f",
+    "title": "Keyboard Page Up",
+    "value": "0x4b"
   },
-
   {
-    title: "Keyboard s and S",
-    value: "0x16",
+    "title": "Keyboard Delete Forward",
+    "value": "0x4c"
   },
-
   {
-    title: "Keyboard ' and \"",
-    value: "0x34",
+    "title": "Keyboard End",
+    "value": "0x4d"
   },
-
   {
-    title: "Keyboard Up Arrow",
-    value: "0x52",
+    "title": "Keyboard Page Down",
+    "value": "0x4e"
   },
-
   {
-    title: "Keyboard F21",
-    value: "0x70",
+    "title": "Keyboard Right Arrow",
+    "value": "0x4f"
   },
-
   {
-    title: "Keyboard t and T",
-    value: "0x17",
+    "title": "Keyboard Left Arrow",
+    "value": "0x50"
   },
-
   {
-    title: "Keyboard Grave Accent and Tilde",
-    value: "0x35",
+    "title": "Keyboard Down Arrow",
+    "value": "0x51"
   },
-
   {
-    title: "Keypad Num Lock and Clear",
-    value: "0x53",
+    "title": "Keyboard Up Arrow",
+    "value": "0x52"
   },
-
   {
-    title: "Keyboard F22",
-    value: "0x71",
+    "title": "Keypad Num Lock and Clear",
+    "value": "0x53"
   },
-
   {
-    title: "Keyboard u and U",
-    value: "0x18",
+    "title": "Keypad /",
+    "value": "0x54"
   },
-
   {
-    title: 'Keyboard , and "<"',
-    value: "0x36",
+    "title": "Keypad *",
+    "value": "0x55"
   },
-
   {
-    title: "Keypad /",
-    value: "0x54",
+    "title": "Keypad -",
+    "value": "0x56"
   },
-
   {
-    title: "Keyboard F23",
-    value: "0x72",
+    "title": "Keypad +",
+    "value": "0x57"
   },
-
   {
-    title: "Keyboard v and V",
-    value: "0x19",
+    "title": "Keypad Enter",
+    "value": "0x58"
   },
-
   {
-    title: 'Keyboard . and ">"',
-    value: "0x37",
+    "title": "Keypad 1 and End",
+    "value": "0x59"
   },
-
   {
-    title: "Keypad *",
-    value: "0x55",
+    "title": "Keypad 2 and Down Arrow",
+    "value": "0x5a"
   },
-
   {
-    title: "Keyboard F24",
-    value: "0x73",
+    "title": "Keypad 3 and Page Down",
+    "value": "0x5b"
   },
-
   {
-    title: "Keyboard w and W",
-    value: "0x1a",
+    "title": "Keypad 4 and Left Arrow",
+    "value": "0x5c"
   },
-
   {
-    title: "Keyboard / and ?",
-    value: "0x38",
+    "title": "Keypad 5",
+    "value": "0x5d"
   },
-
   {
-    title: "Keypad -",
-    value: "0x56",
+    "title": "Keypad 6 and Right Arrow",
+    "value": "0x5e"
   },
-
   {
-    title: "Keyboard Left Control",
-    value: "0xe0",
+    "title": "Keypad 7 and Home",
+    "value": "0x5f"
   },
-
   {
-    title: "Keyboard x and X",
-    value: "0x1b",
+    "title": "Keypad 8 and Up Arrow",
+    "value": "0x60"
   },
-
   {
-    title: "Keyboard Caps Lock",
-    value: "0x39",
+    "title": "Keypad 9 and Page Up",
+    "value": "0x61"
   },
-
   {
-    title: "Keypad +",
-    value: "0x57",
+    "title": "Keypad 0 and Insert",
+    "value": "0x62"
   },
-
   {
-    title: "Keyboard Left Shift",
-    value: "0xe1",
+    "title": "Keypad . and Delete",
+    "value": "0x63"
   },
-
   {
-    title: "Keyboard y and Y",
-    value: "0x1c",
+    "title": "Keyboard Non-US  and |",
+    "value": "0x64"
   },
-
   {
-    title: "Keyboard F1",
-    value: "0x3a",
+    "title": "Keyboard Application",
+    "value": "0x65"
   },
-
   {
-    title: "Keypad Enter",
-    value: "0x58",
+    "title": "Keyboard Power",
+    "value": "0x66"
   },
-
   {
-    title: "Keyboard Left Alt",
-    value: "0xe2",
+    "title": "Keypad =",
+    "value": "0x67"
   },
-
   {
-    title: "Keyboard z and Z",
-    value: "0x1d",
+    "title": "Keyboard F13",
+    "value": "0x68"
   },
-
   {
-    title: "Keyboard F2",
-    value: "0x3b",
+    "title": "Keyboard F14",
+    "value": "0x69"
   },
-
   {
-    title: "Keypad 1 and End",
-    value: "0x59",
+    "title": "Keyboard F15",
+    "value": "0x6a"
   },
-
   {
-    title: "Keyboard Left GUI",
-    value: "0xe3",
+    "title": "Keyboard F16",
+    "value": "0x6b"
   },
-
   {
-    title: "Keyboard 1 and !",
-    value: "0x1e",
+    "title": "Keyboard F17",
+    "value": "0x6c"
   },
-
   {
-    title: "Keyboard F3",
-    value: "0x3c",
+    "title": "Keyboard F18",
+    "value": "0x6d"
   },
-
   {
-    title: "Keypad 2 and Down Arrow",
-    value: "0x5a",
+    "title": "Keyboard F19",
+    "value": "0x6e"
   },
-
   {
-    title: "Keyboard Right Control",
-    value: "0xe4",
+    "title": "Keyboard F20",
+    "value": "0x6f"
   },
-
   {
-    title: "Keyboard 2 and @",
-    value: "0x1f",
+    "title": "Keyboard F21",
+    "value": "0x70"
   },
-
   {
-    title: "Keyboard F4",
-    value: "0x3d",
+    "title": "Keyboard F22",
+    "value": "0x71"
   },
-
   {
-    title: "Keypad 3 and Page Down",
-    value: "0x5b",
+    "title": "Keyboard F23",
+    "value": "0x72"
   },
-
   {
-    title: "Keyboard Right Shift",
-    value: "0xe5",
+    "title": "Keyboard F24",
+    "value": "0x73"
   },
-
   {
-    title: "Keyboard 3 and #",
-    value: "0x20",
+    "title": "Keyboard Left Control",
+    "value": "0xe0"
   },
-
   {
-    title: "Keyboard F5",
-    value: "0x3e",
+    "title": "Keyboard Left Shift",
+    "value": "0xe1"
   },
-
   {
-    title: "Keypad 4 and Left Arrow",
-    value: "0x5c",
+    "title": "Keyboard Left Alt",
+    "value": "0xe2"
   },
-
   {
-    title: "Keyboard Right Alt",
-    value: "0xe6",
+    "title": "Keyboard Left GUI",
+    "value": "0xe3"
   },
-
   {
-    title: "Keyboard 4 and $",
-    value: "0x21",
+    "title": "Keyboard Right Control",
+    "value": "0xe4"
   },
-
   {
-    title: "Keyboard F6",
-    value: "0x3f",
+    "title": "Keyboard Right Shift",
+    "value": "0xe5"
   },
-
   {
-    title: "Keypad 5",
-    value: "0x5d",
+    "title": "Keyboard Right Alt",
+    "value": "0xe6"
   },
-
   {
-    title: "Keyboard Right GUI",
-    value: "0xe7",
-  },
+    "title": "Keyboard Right GUI",
+    "value": "0xe7"
+  }
 ];
 
 const mp = mapping.map((m) => {

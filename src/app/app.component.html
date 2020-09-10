@@ -1,45 +1,19 @@
 <nz-layout class="out-layout">
   <nz-content class="outer-content">
-    <nz-breadcrumb>
-      <nz-breadcrumb-item>Key Remap</nz-breadcrumb-item>
-      <nz-breadcrumb-item>Simple Remap</nz-breadcrumb-item>
-      <nz-breadcrumb-item>Settting</nz-breadcrumb-item>
-    </nz-breadcrumb>
     <nz-layout class="inner-layout">
-      <nz-sider nzWidth="200px" nzTheme="light">
-        <ul nz-menu nzMode="inline" class="sider-menu">
-          <li nz-submenu nzOpen nzTitle="Remapping" nzIcon="home">
-            <ul>
-              <li nz-menu-item nzSelected>
-                <a routerLink="/remapping">Simple Remapping</a>
-              </li>
-              <li nz-menu-item>
-                <a routerLink="/detail">Complex Remapping</a>
-              </li>
-            </ul>
-          </li>
-          <li nz-submenu nzOpen nzTitle="Devices" nzIcon="laptop">
-            <ul>
-              <li nz-menu-item nzSelected>Simple Remapping</li>
-              <li nz-menu-item>Complex Remapping</li>
-            </ul>
-          </li>
-          <li nz-submenu nzOpen nzTitle="Profiles" nzIcon="user">
-            <ul>
-              <li nz-menu-item nzSelected>Simple Remapping</li>
-              <li nz-menu-item>Complex Remapping</li>
-            </ul>
-          </li>
-          <li nz-submenu nzTitle="Settings" nzIcon="laptop">
-            <ul>
-              <li nz-menu-item>option5</li>
-              <li nz-menu-item>option6</li>
-              <li nz-menu-item>option7</li>
-              <li nz-menu-item>option8</li>
-            </ul>
-          </li>
-        </ul>
-      </nz-sider>
+      <nz-header>
+      <nz-tabset nzLinkRouter>
+        <nz-tab>
+          <a nz-tab-link [routerLink]="['/', 'remapping']">Remapping</a>
+        </nz-tab>
+        <nz-tab>
+          <a nz-tab-link [routerLink]="['/', 'detail']">Profiles</a>
+        </nz-tab>
+        <nz-tab>
+          <a nz-tab-link [routerLink]="['/', 'detail']">Misc</a>
+        </nz-tab>
+    </nz-tabset>
+      </nz-header>
       <nz-content class="inner-content">
         <router-outlet></router-outlet
       ></nz-content>

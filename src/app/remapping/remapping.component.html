@@ -7,7 +7,7 @@
     </div>
   </nz-content>
   <nz-content class="page-mapping">
-    <nz-table #basicTable [nzData]="mapping" nzShowPagination="false">
+    <nz-table #basicTable [nzData]="mappings" nzShowPagination="false">
       <thead>
         <tr>
           <th>From</th>
@@ -28,7 +28,7 @@
             </nz-select>
           </td>
           <td>
-            <a (click)="deleteMappinh(idx)">Delete</a>
+            <a (click)="deleteMapping(idx)">Delete</a>
           </td>
         </tr>
       </tbody>
@@ -36,7 +36,7 @@
     <button nz-button nzType="dashed" nzBlock (click)="addMapping()">
       <i nz-icon nzType="plus" nzTheme="outline"></i>
     </button>
-    <button nz-button nzType="primary" nzBlock (click)="saveMapping()">
+    <button nz-button nzType="primary" nzBlock (click)="saveMappings()">
       Apply
     </button>
   </nz-content>

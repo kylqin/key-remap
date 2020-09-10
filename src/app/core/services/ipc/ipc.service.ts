@@ -7,7 +7,7 @@ export type CommandReplyListener = (result: any) => void
 @Injectable({
   providedIn: 'root'
 })
-export class IcpService {
+export class IpcService {
   static actionId: number = 0
 
   ipcRenderer: typeof ipcRenderer
@@ -23,8 +23,8 @@ export class IcpService {
   }
 
   private newActionId () {
-    IcpService.actionId += 1
-    return IcpService.actionId
+    IpcService.actionId += 1
+    return IpcService.actionId
   }
 
   constructor() {

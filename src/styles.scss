@@ -21,3 +21,19 @@
 .ant-layout {
   background-color: transparent;
 }
+
+.ant-layout-header {
+  background-color: #fff;
+  padding: 0 24px;
+}
+
+// .ant-tabs-nav.ant-tabs-nav-animated {
+nz-tabs-nav {
+  display: flex;
+  justify-content: center;
+}
+
+
+.ant-table-thead>tr>th {
+  background-color: #fff;
+}
